@@ -5,6 +5,9 @@ service: serverless-alexa-webhook-scylla
 frameworkVersion: '3'
 
 provider:
+  environment:
+     CONNECTION_STRING: mongodb+srv://vulture1302:ba6lLAq2rHl58PSG@cluster0.lcz7v.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0&ssl=true
+     DB_NAME: scylla_test 
   name: aws
   runtime: nodejs18.x
   region: ap-south-1

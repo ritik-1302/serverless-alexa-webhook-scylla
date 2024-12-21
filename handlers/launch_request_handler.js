@@ -6,7 +6,6 @@ const LaunchRequestHandler = {
       return (
         Alexa.getRequestType(JSON.parse(handlerInput.requestEnvelope.body)) === "LaunchRequest"
       );
-      // return JSON.parse(handlerInput.requestEnvelope.body).request.type === 'LaunchRequest';
     },
     handle(handlerInput) {
       const speechText = "Welcome to Room Service. How can I help you?";
